@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "barra-lateral contenido contenido"
+        "pie pie pie";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: 100vh;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: #7a7a7a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    color: #4b8bff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.barra-lateral {
+    grid-area: barra-lateral;
+    background-color: #c0c0c0;
+    padding: 20px;
+}
+
+.barra-lateral a {
+    display: block;
+    color: #0033cc;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.contenido-principal {
+    grid-area: contenido;
+    background-color: #d0d0d0;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.caja-imagen {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pie-de-pagina {
+    grid-area: pie;
+    background-color: #a0a0a0;
+    text-align: center;
+    padding: 10px;
+}
+
+.pie-de-pagina a {
+    color: #4b8bff;
+    text-decoration: none;
+}
